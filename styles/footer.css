@@ -1,0 +1,34 @@
+.footer {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContent {
+    background-color: var(--mainColor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    width: 80%;
+    border-radius: 15px 50px;
+    box-shadow: 5px 10px 8px var(--shadowColor);
+}
+
+.titolo {
+    font-size: 1.2vw;
+}
+
+.sottotitolo {
+    font-size: 1vw;
+    color: var(--hoverColor);
+}
+
+.logo {
+    margin: 1%;
+    width: 6vw;
+    height: 6vw;
+}

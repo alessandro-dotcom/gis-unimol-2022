@@ -1,0 +1,109 @@
+.content {
+    background-color: var(--mainColor);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    width: 80%;
+
+    box-shadow: 5px 10px 8px var(--shadowColor);
+
+    margin-bottom: 1%;
+    padding: 2vw;
+}
+
+.titoloParagrafo {
+    font-size: 2vw;
+}
+
+.testoParagrafo {
+    margin: 0 2vw 0 2vw;
+    font-size: 1.1vw;
+    text-align:justify;
+}
+
+.cardList {
+    margin-bottom: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    height: auto;
+    width: 80%;
+}
+  
+.card {
+    background: var(--mainColor);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 5px 10px 8px var(--shadowColor);
+
+    padding-top: 1.5vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.testoImg {
+    font-size: 1.1vw;
+    text-align:justify;
+
+    color: var(--shadowColor);
+}
+
+.img {
+    height: 95%;
+    width: 95%;
+    border: 3px solid var(--hoverColor);
+}
+
+.a {
+    color: var(--hoverColor);
+    text-decoration: none;
+}
+
+.a:hover {
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.subTesto {
+    font-size: 0.8vw;
+    color: var(--textColor);
+}
+
+.subImg {
+    font-size: 0.8vw;
+    color: var(--shadowColor);
+}
+
+.tableDati {
+    border-collapse: collapse;
+    width: 90%;
+    text-align: left;
+}
+
+.tableLimiti {
+    border-collapse: collapse;
+    width: 70%;
+    text-align: left;
+    margin-top: 1vw;
+}
+
+th {
+    border: 1px solid #ddd;
+    padding: 1%;
+    background-color: var(--hoverColor);
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}

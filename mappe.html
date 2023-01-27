@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <title>Progetto Unimol</title>
+    <link rel="icon" type="image/x-icon" href="assets/unimolLogo.png">
+</head>
+<body>
+    <div class='header'>
+        <div class='headerContent'>
+            <a class='bottone' href='index.html'>Analisi</a>
+            <a class='bottone' href='acciaieria.html'>Acciaieria</a>
+            <a class='bottone' href='inquinanti.html'>Inquinanti</a>
+            <a class='bottone' href='mappe.html'>Mappe</a>          
+        </div>
+    </div>
+
+    <div class="contenitore">
+    <div class="content" style="border-radius: 50px 15px 15px 15px">
+        <h1 class='titoloParagrafo'> Interpolazione ponderata inversa </h1>
+        <p class="testoParagrafo">
+            I punti interpolati vengono stimati in base alla loro distanza dai valori di cella noti. I punti che sono più vicini ai valori noti saranno maggiormente influenzati rispetto ai punti che sono più lontani.
+        </p>
+        <table class='tableLimiti'>
+            <tr>
+                <th>Stazione</th>
+                <th>Distanza</th>
+                <th>PM10 2011</th>
+                <th>PM10 2015</th>
+                <th>PM10 2021</th>
+            </tr>
+            <tr>
+                <td>Taranto - Machiavelli</td>
+                <td>1.64 km</td>
+                <td>37 µg/m<sup class='subTesto'>3</sup></td>
+                <td>28 µg/m<sup class='subTesto'>3</sup></td>
+                <td>23 µg/m<sup class='subTesto'>3</sup></td>
+            </tr>
+            <tr>
+                <td>Taranto - Archimede</td>
+                <td>1.79 km</td>
+                <td>36 µg/m<sup class='subTesto'>3</sup></td>
+                <td>26 µg/m<sup class='subTesto'>3</sup></td>
+                <td>21 µg/m<sup class='subTesto'>3</sup></td>
+            </tr>
+            <tr>
+                <td>Statte - Via delle Sorgenti</td>
+                <td>7.04 km</td>
+                <td>22 µg/m<sup class='subTesto'>3</sup></td>
+                <td>20 µg/m<sup class='subTesto'>3</sup></td>
+                <td>18 µg/m<sup class='subTesto'>3</sup></td>
+            </tr>
+            <tr>
+                <td>Casamassima</td>
+                <td>56.07 km</td>
+                <td>24 µg/m<sup class='subTesto'>3</sup></td>
+                <td>27 µg/m<sup class='subTesto'>3</sup></td>
+                <td>21 µg/m<sup class='subTesto'>3</sup></td>
+            </tr>
+            <tr>
+                <td>Altamura</td>
+                <td>66.08 km</td>
+                <td>20 µg/m<sup class='subTesto'>3</sup></td>
+                <td>21 µg/m<sup class='subTesto'>3</sup></td>
+                <td>20 µg/m<sup class='subTesto'>3</sup></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cardList">
+        <div class="card" style="border-radius: 15px">
+            <h1 class='titoloParagrafo'> 
+                <a class="a"href="maps/PM10/index.html">Mappa PM10 anno 2015</a>
+            </h1>
+        </div>
+        <div class="card" style="border-radius: 15px">
+            <h1 class='titoloParagrafo'> 
+                <a  class="a"href="maps/NO2/index.html">Mappa NO2 anno 2015 </a>
+            </h1>
+        </div>
+        <div class="card" style="border-radius: 15px">
+            <img class='img' src='assets/PM10.gif' />
+            <p class="testoImg">
+
+            </p>
+        </div>
+        <div class="card" style="border-radius: 15px 15px 50px 15px">
+            <img class='img' src='assets/NO2.gif' />
+            <p class="testoImg">
+
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class='footer'>
+        <div class='footerContent'>
+            <img class='logo' src='assets/unimolLogo.png' alt='Unimol Logo'/>
+            <div>
+                <h3 class='titolo'>Progetto Informatica Territoriale</h3>
+                <p class='sottotitolo'>Roberto Casale</p>
+                <p class='sottotitolo'>Alessandro Notte</p>
+                <p class='sottotitolo'>Alessandro Giacento</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

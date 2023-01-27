@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--textColor);
+
+  font-family: Gilroy;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+.contenitore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --backgroundColor: #f3f3f3;
+  --mainColor: #24252a;
+  --shadowColor: #6d707f;
+  --textColor: #fff;
+  --hoverColor: #0088a7;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../assets/fonts/Gilroy-Regular.ttf);
+}

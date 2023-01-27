@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <title>Progetto Unimol</title>
+    <link rel="icon" type="image/x-icon" href="assets/unimolLogo.png">
+</head>
+<body>
+    <div class='header'>
+        <div class='headerContent'>
+            <a class='bottone' href='index.html'>Analisi</a>
+            <a class='bottone' href='acciaieria.html'>Acciaieria</a>
+            <a class='bottone' href='inquinanti.html'>Inquinanti</a>
+            <a class='bottone' href='mappe.html'>Mappe</a>          
+        </div>
+    </div>
+
+    <div class="contenitore">
+    <div class="content" style="border-radius: 50px 15px 15px 15px">
+        <h1 class='titoloParagrafo'> Obiettivo </h1>
+        <p class="testoParagrafo">
+            Analizzare e raffigurare i <b>livelli di inquinanti</b> prodotti nell'aria delle province di <b>Taranto</b> e <b>Bari</b> nel periodo compreso tra il <b>2009</b> e il <b>2021</b> con particolare riferimento allo stabilimento ex ILVA di Taranto.
+        </p>
+    </div>
+    <div class="cardList">
+        <div class="card" style="border-radius: 15px">
+            <h1 class='titoloParagrafo'> Materiali e metodi </h1>
+            <ul class="testoParagrafo">
+                <li>Raccolta dati geolocalizzati della <b>Rete Regionale di Monitoraggio della Qualità dell'Aria</b> (<a class="a" href="https://www.arpa.puglia.it/pagina2795_aria.html">RRQA</a>)</li>
+                <li>Raccolta dei dati in formato csv dai <b>report annuali</b> della RRQA (<a class="a" href="https://www.arpa.puglia.it/pagina3139_dati-storici-qualit-delllaria.html">Report</a>)</li>
+                <li>Conversione del file CSV in Shapefile (spreadsheet layers)</li>
+                <li><b>Interpolazione IDW</b> delle medie annuali rilevate dai laboratori</li>
+                <li>Esportazione delle interpolazioni in <b>web map</b> (qgis2web)</li>
+                <li>Calcolo dell' indice R<sup class='subTesto'>2</sup> delle curve utilizzando la funzione calcolo di <b>regressione liniare e polinomiale</b> (grado 2)</li>
+                <li>Confronto con <b>l'incidenza dei tumori</b> nelle province di Taranto e Bari (<a class="a" href="https://www.mdpi.com/2071-1050/14/5/2662">Articolo</a>)</li>
+            </ul>
+        </div> 
+        <div class="card" style="border-radius: 15px">
+            <img class='img' src='assets/impianti.jpg' alt="Taranto e Bari"/>
+            <p class="testoImg">
+                Province di Taranto e Bari: impianti Ilva e Sorgenia 
+            </p>
+        </div>
+        <div class="card" style="border-radius: 15px">
+            <h1 class='titoloParagrafo'> Esempio dati raccolti RRQA</h1>
+            <table class='tableDati'>
+                <tr>
+                    <th>Provincia</th>
+                    <th>Stazione</th>
+                    <th>E</th>
+                    <th>N</th>
+                    <th>Distanza dall'Ilva (km)</th>
+                </tr>
+                <tr>
+                    <td>Bari</td>
+                    <td>Modugno - EN02</td>
+                    <td>648305</td>
+                    <td>4555516</td>
+                    <td>80.26</td>
+                </tr>
+                <tr>
+                    <td>Bari</td>
+                    <td>Grottaglie</td>
+                    <td>705279</td>
+                    <td>4490271</td>
+                    <td>18.33</td>
+                </tr>
+                <tr>
+                    <td>Taranto</td>
+                    <td>Martina Franca</td>
+                    <td>697012</td>
+                    <td>4508162</td>
+                    <td>24.53</td>
+                </tr>
+                <tr>
+                    <td>Taranto</td>
+                    <td>Massafra</td>
+                    <td>679111</td>
+                    <td>4495815</td>
+                    <td>13.26</td>
+                </tr>
+                <tr>
+                    <td>Taranto</td>
+                    <td>Taranto - CISI</td>
+                    <td>690889</td>
+                    <td>4488018</td>
+                    <td>4.16</td>
+                </tr>
+            </table>
+        </div>             
+        <div class="card" style="border-radius: 15px 15px 50px 15px">
+            <img class='img' src='assets/laboratori.jpg' alt="Taranto e Bari"/>
+            <p class="testoImg">
+                Province di Taranto e Bari: laboratori RRQA
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class='footer'>
+        <div class='footerContent'>
+            <img class='logo' src='assets/unimolLogo.png' alt='Unimol Logo'/>
+            <div>
+                <h3 class='titolo'>Progetto Informatica Territoriale</h3>
+                <p class='sottotitolo'>Roberto Casale</p>
+                <p class='sottotitolo'>Alessandro Notte</p>
+                <p class='sottotitolo'>Alessandro Giacento</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
